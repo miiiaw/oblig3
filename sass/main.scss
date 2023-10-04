@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffffff;
+    
+    header{
+        margin: 0;
+        padding: 20px;
+        background-color: sandybrown;
+
+        nav{
+            margin: 0;
+            overflow: hidden; 
+            color: #000000;
+            font-size: 2rem;
+
+            .menu{
+                margin-right: 40px;
+                float: left;
+            }
+
+            .navright{
+                margin-right: 30px;
+                float: right;
+            }
+        }
+
+        a{
+            color: #000000;
+            text-decoration: none;
+        }
+
+        span{
+            text-transform: uppercase;
+            color: #000000;
+        }
+
+    }
+
+    main{
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        overflow: hidden;
+        background-color: antiquewhite;
+
+        #filter{
+            margin-right: 30px;
+            float: right;
+            text-align: right;
+            font-size: 1.8rem;
+        }
+
+        #produktbilde{
+            margin: 0 auto;
+            padding: 5px;
+            max-width: 500px;
+
+            img{
+                max-width: 500px;
+                width: 100%;
+            }
+        }
+
+
+        section{
+            margin: 10px auto;
+            margin-top: 15px;
+            padding: 5px;
+            overflow: hidden;
+            max-width: 500px;
+            min-width: 250px;
+
+            img{
+                max-width: 450px;
+                width: 100%;
+            }
+
+            a{
+                color: #000000;
+                border: none;
+            }
+
+            h2{
+                margin: 0;
+                font-size: 1.3rem;
+                color: burlywood;
+                text-transform: uppercase;
+            }
+
+            p{
+                margin: 0;
+                padding: 0;
+            }
+
+            article{
+                margin-bottom: 10px;
+                padding: 5px;
+                float: left;
+                max-width: 150px;
+                width: 100%;
+                
+
+                .products-summary{
+                    text-transform: lowercase;
+                    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+ 
+    }
+
+    footer{
+        margin: 0;
+        padding: 10px;
+        background-color: sandybrown;
+        text-align: center;
+        font-size: 1rem;
+
+        a{
+            color:#000000;
+            text-decoration: none;
+        }
+
+        h3{
+            color: #000000;
+            font-size: 1.5rem;
+
+        }
+
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+                input{
+                    background-color: #000000;
+                    color: antiquewhite;
+                    display: block;
+                    margin: 5px auto;
+                    width:150px;
+                    height: 30px;
+                }
+
+    }
+
+}
