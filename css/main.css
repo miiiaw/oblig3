@@ -11,9 +11,18 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: #ffffff;
 }
+body #grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
+  gap: 0rem 0rem;
+}
 body header {
   margin: 0;
-  padding: 20px;
+  padding: 10px;
+  grid-column: 1/2;
+  grid-row: 1/2;
   background-color: sandybrown;
 }
 body header nav {
@@ -40,19 +49,28 @@ body header span {
 }
 body main {
   margin: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-self: center;
   overflow: hidden;
-  background-color: antiquewhite;
+  background-color: ffffff;
+}
+body main .flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem 1rem;
 }
 body main #filter {
   margin-right: 30px;
+  font-size: 1.8rem;
   float: right;
   text-align: right;
-  font-size: 1.8rem;
 }
 body main #produktbilde {
-  margin: 0 auto;
+  margin: 0;
   padding: 5px;
   max-width: 500px;
 }
@@ -60,11 +78,16 @@ body main #produktbilde img {
   max-width: 500px;
   width: 100%;
 }
+body main h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #000000;
+  text-transform: uppercase;
+}
 body main section {
-  margin: 10px auto;
+  margin: 10px;
   margin-top: 15px;
   padding: 5px;
-  overflow: hidden;
   max-width: 500px;
   min-width: 250px;
 }
@@ -76,20 +99,12 @@ body main section a {
   color: #000000;
   border: none;
 }
-body main section h2 {
-  margin: 0;
-  font-size: 1.3rem;
-  color: burlywood;
-  text-transform: uppercase;
-}
 body main section p {
   margin: 0;
   padding: 0;
 }
 body main section article {
-  margin-bottom: 10px;
-  padding: 5px;
-  float: left;
+  padding: 3px;
   max-width: 150px;
   width: 100%;
 }
@@ -101,8 +116,10 @@ body main section article .products-summary {
 body footer {
   margin: 0;
   padding: 10px;
-  background-color: sandybrown;
+  grid-column: 1/2;
+  grid-row: 3/4;
   text-align: center;
+  background-color: sandybrown;
   font-size: 1rem;
 }
 body footer a {
