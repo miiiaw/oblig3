@@ -9,28 +9,66 @@
 </head>
 <body>
     <div id="grid-container">
+
+    <!--HEADER, mobil først-->
+
     <header>
-        <nav>
-        <a href="#" alt="Menu" class="menu"><i class="fa-solid fa-bars"></i></a>
+        <nav id="mobile-nav">
+            <a href="#" alt="Menu" class="menu"><i class="fa-solid fa-bars"></i></a>
 
-        <a href="index.html" alt="Home"><span>Logo</span></a>
+            <a href="index.html" alt="Home"><span>Logo</span></a>
 
-        <a href="#" alt="Favorites" class="navright"><i class="fa-solid fa-heart"></i></a>
+            <a href="#" alt="Favorites" class="navright"><i class="fa-solid fa-heart"></i></a>
 
-        <a href="#" alt="Shopping bag" class="navright"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a href="#" alt="Shopping bag" class="navright"><i class="fa-solid fa-bag-shopping"></i></a>
         </nav>
-    </header>
+
+        <nav id="desktop-nav">
+            <p id="top-ca">This is a call to action element</p>
+            <article id="top-nav">
+                <a href="index.html" alt="Home"><span>Logo</span></a>
+    
+                <a href="#" alt="Favorites" class="navright"><i class="fa-solid fa-magnifying-glass"></i></a>
+    
+                <a href="#" alt="Favorites" class="navright"><i class="fa-solid fa-user"></i></a>
+    
+                <a href="#" alt="Favorites" class="navright"><i class="fa-solid fa-heart"></i></a>
+        
+                <a href="#" alt="Shopping bag" class="navright"><i class="fa-solid fa-bag-shopping"></i></a>
+                </article>
+        
+            <article id="bottom-nav">
+            <ul>
+                <li><a href="#" alt="Home">New styles</a></li>
+    
+                <li><a href="#" alt="Shoes">Shoes</a></li>
+    
+                <li><a href="#" alt="Collections">Collections</a></li>
+    
+                <li><a href="#" alt="About">About</a></li>
+            </ul>
+        </article>
+    </nav>
+</header>
+
+<!-- MAIN: hovedinnhold-->
 
     <main>
         <span>This/is/a/path</span>
-        <article id="produktbilde">
-            <p><img src="img/sko1.jpg" alt="Product photo" /></p>
-            <p><img src="#" alt="Product photo" /><img src="#" alt="Product photo" /><img src="#" alt="Product photo" /></p>
-        </article>
 
-        <div id="add_favorite"></div>
+        <section id="productphotos">
+            <article>
+                <img src="img/sko1.jpg" alt="Product photo" />
+            </article>
+            <article>
+                <img src="#" alt="Product photo" />
+                <img src="#" alt="Product photo" />
+                <img src="#" alt="Product photo" />
+            </article>
 
-        <article id="produktinfo">
+        <div id="add-favorite"><a href="#" alt="Add to favorites" class="navright"><i class="fa-solid fa-heart-circle-plus"></i></a></div>
+
+        <article>
             <h2>Title</h2>
             <p>Brand</p>
             <button>Size</button>
@@ -41,55 +79,59 @@
                 <li>- Number two</li>
                 <li>- Number three</li>
             </ul>
-            <h3>Product information</h3>
-            <p>Loremipsum cats</p>
         </article>
+        </section>
 
         <section>
-            <h3>You may also like:</h3>
-            <article>
-                <a href="#" alt="Product"><img src="img/sko2.jpg" alt="Product photo" /></a>
-                <p class="products-summary">
-                    Product
-                <br />Price
-            </p>
-            </article>
-            <article>
-                <a href="#" alt="Product"><img src="img/sko2.jpg" alt="Product photo" /></a>
-                <p class="products-summary">
-                    Product
-                <br />Price
-            </p>
-            </article>
-            <article>
-                <a href="#" alt="Product"><img src="img/sko2.jpg" alt="Product photo" /></a>
-                <p class="products-summary">
-                    Product
-                <br />Price
-            </p>
-            </article>
-            <article>
-                <a href="#" alt="Product"><img src="img/sko2.jpg" alt="Product photo" /></a>
-                <p class="products-summary">
-                    Product
-                <br />Price
-            </p>
-            </article>
-            <article>
-                <a href="#" alt="Product"><img src="img/sko2.jpg" alt="Product photo" /></a>
-                <p class="products-summary">
-                    Product
-                <br />Price
-            </p>
-            </article>
-            <article>
-                <a href="#" alt="Product"><img src="img/sko2.jpg" alt="Product photo" /></a>
-                <p class="products-summary">
-                    Product
-                <br />Price
-            </p>
-            </article>
+           <h3>Product information</h3>
+           <p>Loremipsum cats</p>
         </section>
+
+            <h3>You may also like:</h3>
+            <section id="flex-container-newp">
+                <article>
+                <a href="produkt.html" alt="Product"><img src="img/sko2.jpg" alt="Product photo" /></a>
+                <p class="products-summary">
+                    Product
+                <br />Price
+            </p>
+            </article>
+            <article>
+                <a href="produkt.html" alt="Product"><img src="img/sko2.jpg" alt="Product photo" /></a>
+                <p class="products-summary">
+                    Product
+                <br />Price
+            </p>
+            </article>
+            <article>
+                <a href="produkt.html" alt="Product"><img src="img/sko2.jpg" alt="Product photo" /></a>
+                <p class="products-summary">
+                    Product
+                <br />Price
+            </p>
+            </article>
+            <article>
+                <a href="produkt.html" alt="Product"><img src="img/sko2.jpg" alt="Product photo" /></a>
+                <p class="products-summary">
+                    Product
+                <br />Price
+            </p>
+            </article>
+            <article>
+                <a href="produkt.html" alt="Product"><img src="img/sko2.jpg" alt="Product photo" /></a>
+                <p class="products-summary">
+                    Product
+                <br />Price
+            </p>
+            </article>
+            <article>
+                <a href="produkt.html" alt="Product"><img src="img/sko2.jpg" alt="Product photo" /></a>
+                <p class="products-summary">
+                    Product
+                <br />Price
+            </p>
+            </article>
+            </section>
 
 
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -14,30 +15,34 @@ body {
 body #grid-container {
   width: 100%;
   display: grid;
-  grid-template-rows: auto auto auto;
   grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
   gap: 0rem 0rem;
 }
 body header {
-  margin: 0;
+  width: 100%;
+  margin: 0 auto;
   padding: 10px;
   grid-column: 1/2;
   grid-row: 1/2;
   background-color: sandybrown;
 }
-body header nav {
+body header #mobile-nav {
   margin: 0;
   overflow: hidden;
   color: #000000;
   font-size: 2rem;
 }
-body header nav .menu {
+body header #mobile-nav .menu {
   margin-right: 40px;
   float: left;
 }
-body header nav .navright {
+body header #mobile-nav .navright {
   margin-right: 30px;
   float: right;
+}
+body header #desktop-nav {
+  display: none;
 }
 body header a {
   color: #000000;
@@ -48,7 +53,9 @@ body header span {
   color: #000000;
 }
 body main {
-  margin: 0;
+  max-width: 500px;
+  min-width: 250px;
+  margin: 0 auto;
   padding: 10px;
   grid-column: 1/2;
   grid-row: 2/3;
@@ -56,12 +63,39 @@ body main {
   overflow: hidden;
   background-color: ffffff;
 }
-body main .flex-container {
+body main #campaign {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+body main #campaign img {
+  width: 100%;
+}
+body main #campaign a {
+  color: #000000;
+  border: none;
+}
+body main #flex-container-newp {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
   gap: 1rem 1rem;
+  width: 100%;
+  max-width: 500px;
+}
+body main #flex-container-newp article {
+  padding: 3px;
+  max-width: 150px;
+}
+body main #flex-container-newp article img {
+  max-width: 150px;
+}
+body main #flex-container-newp article .products-summary {
+  margin: 0;
+  text-transform: lowercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 0.8rem;
 }
 body main #filter {
   margin-right: 30px;
@@ -69,52 +103,46 @@ body main #filter {
   float: right;
   text-align: right;
 }
-body main #produktbilde {
-  margin: 0;
-  padding: 5px;
-  max-width: 500px;
+body main #productphotos {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem 1rem;
 }
-body main #produktbilde img {
-  max-width: 500px;
+body main #productphotos img {
   width: 100%;
 }
+body main #add-favorite {
+  display: inline-block;
+  float: right;
+  color: #000000;
+}
+body main #add-favorite a {
+  color: #000000;
+}
+body main #collections-mobile {
+  width: 100%;
+  margin: 0 auto;
+}
+body main #collections-mobile article img {
+  margin-top: 10px;
+  padding: 0;
+  width: 100%;
+}
+body main #collections-desktop {
+  display: none;
+}
 body main h2 {
-  margin: 0;
+  margin-top: 5px;
   font-size: 1.3rem;
   color: #000000;
   text-transform: uppercase;
 }
-body main section {
-  margin: 10px;
-  margin-top: 15px;
-  padding: 5px;
-  max-width: 500px;
-  min-width: 250px;
-}
-body main section img {
-  max-width: 450px;
-  width: 100%;
-}
-body main section a {
-  color: #000000;
-  border: none;
-}
-body main section p {
-  margin: 0;
-  padding: 0;
-}
-body main section article {
-  padding: 3px;
-  max-width: 150px;
-  width: 100%;
-}
-body main section article .products-summary {
-  text-transform: lowercase;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 0.8rem;
-}
 body footer {
-  margin: 0;
+  width: 100%;
+  margin: 0 auto;
   padding: 10px;
   grid-column: 1/2;
   grid-row: 3/4;
@@ -142,4 +170,131 @@ body footer input {
   margin: 5px auto;
   width: 150px;
   height: 30px;
+}
+
+/* CSS Desktop: Forandringer som skal skje på skjerm */
+@media only screen and (min-width: 600px) {
+  body #grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto auto auto;
+    gap: 0rem 0rem;
+  }
+  body header {
+    width: 100%;
+    padding: 0;
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+  body header #mobile-nav {
+    display: none;
+  }
+  body header #desktop-nav {
+    display: block;
+    margin: 0 auto;
+  }
+  body header #desktop-nav #top-ca {
+    margin: 0;
+    padding: 5px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: orangered;
+    text-align: center;
+  }
+  body header #desktop-nav #top-nav {
+    margin: 0;
+    padding: 20px;
+    color: #000000;
+    font-size: 2rem;
+    overflow: hidden;
+  }
+  body header #desktop-nav #top-nav .navright {
+    margin-right: 30px;
+    float: right;
+  }
+  body header #desktop-nav #bottom-nav {
+    margin: 0 auto;
+    background-color: rgb(197, 133, 77);
+    padding: 4px;
+    text-align: center;
+  }
+  body header #desktop-nav #bottom-nav ul li {
+    padding-left: 12px;
+    padding-right: 12px;
+    display: inline-block;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  body main {
+    margin: 0 auto;
+    max-width: 850px;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    justify-self: center;
+  }
+  body main #campaign {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+  }
+  body main #campaign img {
+    width: 100%;
+    max-width: 800px;
+  }
+  body main #flex-container-newp {
+    width: 100%;
+    max-width: 800px;
+  }
+  body main #flex-container-newp article {
+    max-width: 200px;
+  }
+  body main #flex-container-newp article img {
+    max-width: 200px;
+  }
+  body main #collections-mobile {
+    display: none;
+  }
+  body main #collections-desktop {
+    margin-top: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 0.5rem 0.5rem;
+    width: 100%;
+  }
+  body main #collections-desktop article {
+    margin: 0;
+    padding: 0;
+  }
+  body main #collections-desktop article img {
+    width: 400px;
+    height: 250px;
+  }
+  body main #productphotos img {
+    max-width: 500px;
+  }
+  body main h2 {
+    font-size: 1.5rem;
+  }
+  body main article img {
+    max-width: 500px;
+  }
+  body footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 5rem 5rem;
+    width: 100%;
+    grid-column: 1/5;
+    grid-row: 3/4;
+  }
+  body footer input {
+    width: 150px;
+    height: 30px;
+    display: inline-block;
+  }
 }/*# sourceMappingURL=main.css.map */

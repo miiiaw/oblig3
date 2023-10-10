@@ -9,23 +9,55 @@
 </head>
 <body>
     <div id="grid-container">
+
+    <!--HEADER, mobil først-->
+
     <header>
-        <nav>
-        <a href="#" alt="Menu" class="menu"><i class="fa-solid fa-bars"></i></a>
+        <nav id="mobile-nav">
+            <a href="#" alt="Menu" class="menu"><i class="fa-solid fa-bars"></i></a>
 
-        <a href="index.html" alt="Home"><span>Logo</span></a>
+            <a href="index.html" alt="Home"><span>Logo</span></a>
 
-        <a href="#" alt="Favorites" class="navright"><i class="fa-solid fa-heart"></i></a>
+            <a href="#" alt="Favorites" class="navright"><i class="fa-solid fa-heart"></i></a>
 
-        <a href="#" alt="Shopping bag" class="navright"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a href="#" alt="Shopping bag" class="navright"><i class="fa-solid fa-bag-shopping"></i></a>
         </nav>
-    </header>
+
+        <nav id="desktop-nav">
+            <p id="top-ca">This is a call to action element</p>
+            <article id="top-nav">
+                <a href="index.html" alt="Home"><span>Logo</span></a>
+    
+                <a href="#" alt="Favorites" class="navright"><i class="fa-solid fa-magnifying-glass"></i></a>
+    
+                <a href="#" alt="Favorites" class="navright"><i class="fa-solid fa-user"></i></a>
+    
+                <a href="#" alt="Favorites" class="navright"><i class="fa-solid fa-heart"></i></a>
+        
+                <a href="#" alt="Shopping bag" class="navright"><i class="fa-solid fa-bag-shopping"></i></a>
+                </article>
+        
+            <article id="bottom-nav">
+            <ul>
+                <li><a href="#" alt="Home">New styles</a></li>
+    
+                <li><a href="#" alt="Shoes">Shoes</a></li>
+    
+                <li><a href="#" alt="Collections">Collections</a></li>
+    
+                <li><a href="#" alt="About">About</a></li>
+            </ul>
+        </article>
+    </nav>
+</header>
+
+<!-- MAIN: hovedinnhold, mobil først-->
     
     <main>
         <span>This/is/a/path</span>
         <section id="filter"><i class="fa-solid fa-sliders"></i></section>
         <h2>Summer shoes</h2>
-        <section class="flex-container">
+        <section id="flex-container-newp">
             <article>
             <a href="produkt.html" alt="Product"><img src="img/sko2.jpg" alt="Product photo" /></a>
             <p class="products-summary">
