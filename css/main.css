@@ -12,14 +12,26 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: #ffffff;
 }
-body #grid-container {
+body h2 {
+  font-size: 1.8rem;
+  margin-top: 5px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+#grid-container {
   width: 100%;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto;
   gap: 0rem 0rem;
 }
-body header {
+
+header {
   width: 100%;
   margin: 0 auto;
   padding: 10px;
@@ -27,32 +39,33 @@ body header {
   grid-row: 1/2;
   background-color: sandybrown;
 }
-body header #mobile-nav {
+header #mobile-nav {
   margin: 0;
   overflow: hidden;
   color: #000000;
   font-size: 2rem;
 }
-body header #mobile-nav .menu {
+header #mobile-nav .menu {
   margin-right: 40px;
   float: left;
 }
-body header #mobile-nav .navright {
+header #mobile-nav .navright {
   margin-right: 30px;
   float: right;
 }
-body header #desktop-nav {
+header #desktop-nav {
   display: none;
 }
-body header a {
+header a {
   color: #000000;
   text-decoration: none;
 }
-body header span {
+header span {
   text-transform: uppercase;
   color: #000000;
 }
-body main {
+
+main {
   max-width: 500px;
   min-width: 250px;
   margin: 0 auto;
@@ -63,19 +76,19 @@ body main {
   overflow: hidden;
   background-color: ffffff;
 }
-body main #campaign {
+main #campaign {
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
 }
-body main #campaign img {
+main #campaign img {
   width: 100%;
 }
-body main #campaign a {
+main #campaign a {
   color: #000000;
   border: none;
 }
-body main #flex-container-newp {
+main #flex-container-newp {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -84,26 +97,27 @@ body main #flex-container-newp {
   width: 100%;
   max-width: 500px;
 }
-body main #flex-container-newp article {
+main #flex-container-newp article {
   padding: 3px;
   max-width: 150px;
 }
-body main #flex-container-newp article img {
+main #flex-container-newp article img {
   max-width: 150px;
 }
-body main #flex-container-newp article .products-summary {
+main #flex-container-newp article .products-summary {
   margin: 0;
   text-transform: lowercase;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 0.8rem;
 }
-body main #filter {
+main #filter {
   margin-right: 30px;
   font-size: 1.8rem;
   float: right;
   text-align: right;
 }
-body main #productphotos {
+main #productphotos {
+  margin-top: 1.5rem;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -111,36 +125,74 @@ body main #productphotos {
   align-content: center;
   gap: 1rem 1rem;
 }
-body main #productphotos img {
+main #productphotos img {
   width: 100%;
 }
-body main #add-favorite {
-  display: inline-block;
+main #productphotos article img {
+  max-width: 100px;
+  max-height: 100px;
+}
+main #product-info-first {
+  width: 100%;
+}
+main #product-info-first ul li {
+  list-style-type: none;
+}
+main #product-info-first #add-favorite {
+  margin-top: 0;
   float: right;
+  font-size: 2rem;
+}
+main #product-info-first #add-favorite a {
   color: #000000;
 }
-body main #add-favorite a {
-  color: #000000;
+main #product-info-second {
+  width: 100%;
 }
-body main #collections-mobile {
+main #product-info-second p {
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+main #flex-container-similar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem 1rem;
+  width: 100%;
+  max-width: 500px;
+}
+main #flex-container-similar h2 {
+  margin-top: 0;
+  margin-bottom: 10rem;
+}
+main #flex-container-similar article {
+  padding: 3px;
+  max-width: 150px;
+}
+main #flex-container-similar article img {
+  max-width: 150px;
+}
+main #flex-container-similar article .products-summary {
+  margin: 0;
+  text-transform: lowercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 0.8rem;
+}
+main #collections-mobile {
   width: 100%;
   margin: 0 auto;
 }
-body main #collections-mobile article img {
+main #collections-mobile article img {
   margin-top: 10px;
   padding: 0;
   width: 100%;
 }
-body main #collections-desktop {
+main #collections-desktop {
   display: none;
 }
-body main h2 {
-  margin-top: 5px;
-  font-size: 1.3rem;
-  color: #000000;
-  text-transform: uppercase;
-}
-body footer {
+
+footer {
   width: 100%;
   margin: 0 auto;
   padding: 10px;
@@ -150,20 +202,20 @@ body footer {
   background-color: sandybrown;
   font-size: 1rem;
 }
-body footer a {
+footer a {
   color: #000000;
   text-decoration: none;
 }
-body footer h3 {
+footer h3 {
   color: #000000;
   font-size: 1.5rem;
 }
-body footer ul {
+footer ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-body footer input {
+footer input {
   background-color: #000000;
   color: antiquewhite;
   display: block;
@@ -229,7 +281,7 @@ body footer input {
   }
   body main {
     margin: 0 auto;
-    max-width: 850px;
+    max-width: 1000px;
     grid-column: 2/4;
     grid-row: 2/3;
     justify-self: center;
@@ -245,7 +297,7 @@ body footer input {
   }
   body main #flex-container-newp {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
   }
   body main #flex-container-newp article {
     max-width: 200px;
@@ -273,11 +325,55 @@ body footer input {
     width: 400px;
     height: 250px;
   }
-  body main #productphotos img {
-    max-width: 500px;
+  body main #grid-product {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 1rem 1rem;
+    align-content: space-evenly;
+    align-self: start;
   }
-  body main h2 {
-    font-size: 1.5rem;
+  body main #productphotos {
+    margin: 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+    max-width: 800px;
+  }
+  body main #productphotos img {
+    width: 100%;
+    max-width: 800px;
+  }
+  body main #productphotos article img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  body main #product-info-first {
+    margin: 0;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  body main #product-info-first #add-favorite {
+    margin-top: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 2rem;
+  }
+  body main #product-info-first #add-favorite a {
+    color: #000000;
+  }
+  body main #product-info-second {
+    margin: 0;
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+  body main #flex-container-similar {
+    margin: 0;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    width: 100%;
+    max-width: 900px;
   }
   body main article img {
     max-width: 500px;
