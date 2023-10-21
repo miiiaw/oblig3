@@ -3,166 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/c6b3525d2c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="fa/css/fontawesome.css" rel="stylesheet" type="text/css">
+    <link href="fa/css/solid.css" rel="stylesheet" type="text/css">
+    <link href="fa/css/brands.css" rel="stylesheet" type="text/css">
     <title>Shop name - shop details</title>
 </head>
 <body>
+    <!-- GRID START -->
     <div id="grid-container">
 
-    <!--HEADER, mobil først-->
-
+    <!--HEADER START-->
     <header>
+        <!-- Header mobil, med enkel navigasjon i header -->
         <nav id="mobile-nav">
-            <a href="#" alt="Menu" class="menu"><i class="fa-solid fa-bars"></i></a>
+            <a href="#" class="menu"><i class="fa-solid fa-bars"></i></a>
 
-            <a href="index.html" alt="Home"><span>Logo</span></a>
+            <a href="index.html"><span>Logo</span></a>
 
-            <a href="#" alt="Favorites" class="navright"><i class="fa-solid fa-heart"></i></a>
+            <a href="#" class="navright"><i class="fa-solid fa-heart"></i></a>
 
-            <a href="#" alt="Shopping bag" class="navright"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a href="#" class="navright"><i class="fa-solid fa-bag-shopping"></i></a>
         </nav>
+        <!-- Header mobil slutt -->
 
+        <!-- Header desktop, med navigasjon oppe og nede i header -->
         <nav id="desktop-nav">
             <p id="top-ca">This is a call to action element</p>
             <article id="top-nav">
-                <a href="index.html" alt="Home"><span>Logo</span></a>
+                <a href="index.html"><span>Logo</span></a>
     
-                <a href="#" alt="Favorites" class="navright"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" class="navright"><i class="fa-solid fa-magnifying-glass"></i></a>
     
-                <a href="#" alt="Favorites" class="navright"><i class="fa-solid fa-user"></i></a>
+                <a href="#" class="navright"><i class="fa-solid fa-user"></i></a>
     
-                <a href="#" alt="Favorites" class="navright"><i class="fa-solid fa-heart"></i></a>
+                <a href="#" class="navright"><i class="fa-solid fa-heart"></i></a>
         
-                <a href="#" alt="Shopping bag" class="navright"><i class="fa-solid fa-bag-shopping"></i></a>
-                </article>
+                <a href="#" class="navright"><i class="fa-solid fa-bag-shopping"></i></a>
+            </article>
         
             <article id="bottom-nav">
-            <ul>
-                <li><a href="#" alt="Home">New styles</a></li>
-    
-                <li><a href="#" alt="Shoes">Shoes</a></li>
-    
-                <li><a href="#" alt="Collections">Collections</a></li>
-    
-                <li><a href="#" alt="About">About</a></li>
-            </ul>
-        </article>
-    </nav>
-</header>
+                <ul>
+                    <li><a href="#">New styles</a></li>
+                    <li><a href="kategori.html">Shoes</a></li>
+                    <li><a href="kategori.html">Collections</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </article>
+        </nav>
+        <!-- Header desktop slutt -->     
 
-<!-- MAIN: hovedinnhold-->
-
+    </header>
+    <!-- HEADER SLUTT -->
+    
+    <!-- MAIN START-->
     <main>
         <p>This/is/a/path</p>
+        <!-- Grid for produktside -->
         <div id="grid-product">
-
+        <!-- Seksjon for produktbilder -->
         <section id="productphotos">
-            <img src="img/sko1.jpg" alt="Product photo" />
-                  <article>
-                  <img src="img/sko3.jpg" alt="Product photo" />
-                  <img src="img/sko3.jpg" alt="Product photo" />
-                  <img src="img/sko3.jpg" alt="Product photo" />
-                  </article>
+            <img src="img/sko1.jpg" alt="Product photo">
+            <article>
+                <img src="img/sko3.jpg" alt="Product photo">
+                <img src="img/sko3.jpg" alt="Product photo">
+                <img src="img/sko3.jpg" alt="Product photo">
+            </article>
         </section>
-
+        <!-- Seksjon for produktbilder slutt-->
         
+        <!-- Seksjon for produktinformasjon og kjøp -->
         <section id="product-info-first">
-            <p id="add-favorite"><a href="#" alt="Add to favorites" class="add-favorite"><i class="fa-solid fa-heart-circle-plus"></i></a></p>
+            <p id="add-favorite"><a href="#" class="add-favorite"><i class="fa-solid fa-heart-circle-plus"></i></a></p>
             <h2>Title</h2>
             <p>Brand</p>
-            <p><button>Size</button></p>
+            <p><button>Choose size</button></p>
             <p><button>Buy</button></p>
-            <h3>Call to action</h3>
+            <h3>Call to action elements</h3>
             <ul>
                 <li>- Number one</li>
                 <li>- Number two</li>
                 <li>- Number three</li>
             </ul>
         </section>
+        <!-- Seksjon for info og kjøp slutt -->
 
+        <!-- Seksjon for utfyllende produktinformasjon -->
         <section id="product-info-second">
            <h3>Product information</h3>
-           <p>Making bread on the bathrobe i is playing on your console hooman. Terrorize the hundred-and-twenty-pound rottweiler and steal his bed, not sorry funny little cat chirrup noise shaking upright tail when standing next to you or stare at guinea pigs, yet refuse to leave cardboard box.</p>
-           <h2>You may also like:</h2>
+           <p>Making bread on the bathrobe i is playing on your console hooman. Terrorize the hundred-and-twenty-pound rottweiler and steal his bed, not sorry funny little cat chirrup noise shaking upright tail when standing next to you or stare at guinea pigs, yet refuse to leave cardboard box.</p> 
         </section>
+        <!-- Seksjon for mer info slutt -->
 
-            <section id="flex-container-similar">
-                <article>
-                <a href="produkt.html" alt="Product"><img src="img/sko2.jpg" alt="Product photo" /></a>
-                <p class="products-summary">
-                    Product
-                <br />Price
-            </p>
-            </article>
+        <!-- Seksjon for liknende produkter -->
+        <section id="similar">
+            <h3>You may also like:</h3>
+        <section id="flex-container-similar">
             <article>
-                <a href="produkt.html" alt="Product"><img src="img/sko2.jpg" alt="Product photo" /></a>
-                <p class="products-summary">
-                    Product
-                <br />Price
-            </p>
+                <a href="produkt.html"><img src="img/sko2.jpg" alt="Product photo"></a>
+                <h4>Product title</h4>
+                <p class="products-summary">Product<br>Price</p>
             </article>
+            
             <article>
-                <a href="produkt.html" alt="Product"><img src="img/sko2.jpg" alt="Product photo" /></a>
-                <p class="products-summary">
-                    Product
-                <br />Price
-            </p>
+                <a href="produkt.html"><img src="img/sko2.jpg" alt="Product photo"></a>
+                <h4>Product title</h4>
+                <p class="products-summary">Product<br>Price</p>
             </article>
+            
             <article>
-                <a href="produkt.html" alt="Product"><img src="img/sko2.jpg" alt="Product photo" /></a>
-                <p class="products-summary">
-                    Product
-                <br />Price
-            </p>
+                <a href="produkt.html"><img src="img/sko2.jpg" alt="Product photo"></a>
+                <h4>Product title</h4>
+                <p class="products-summary">Product<br>Price</p>
             </article>
+            
             <article>
-                <a href="produkt.html" alt="Product"><img src="img/sko2.jpg" alt="Product photo" /></a>
-                <p class="products-summary">
-                    Product
-                <br />Price
-            </p>
+                <a href="produkt.html"><img src="img/sko2.jpg" alt="Product photo"></a>
+                <h4>Product title</h4>
+                <p class="products-summary">Product<br>Price</p>
             </article>
+            
             <article>
-                <a href="produkt.html" alt="Product"><img src="img/sko2.jpg" alt="Product photo" /></a>
-                <p class="products-summary">
-                    Product
-                <br />Price
-            </p>
+                <a href="produkt.html"><img src="img/sko2.jpg" alt="Product photo"></a>
+                <h4>Product title</h4>
+                <p class="products-summary">Product<br>Price</p>
             </article>
-            </section>
-
-            </div>
-
+            
+            <article>
+                <a href="produkt.html"><img src="img/sko2.jpg" alt="Product photo"></a>
+                <h4>Product title</h4>
+                <p class="products-summary">Product<br>Price</p>
+            </article>
+        </section>
+        </section>
+        <!-- Seksjon for liknende produkter slutt -->
+        </div>
+        <!-- Grid for produktside slutt -->
     </main>
-    
-    <footer>
+    <!-- MAIN SLUTT -->
+
+    <!--FOOTER START-->
+    <footer>    
         <section>
             <h3>Information</h3>
             <ul>
-                <li><a href="#" alt="">FAQ</a></li>
-                <li><a href="#" alt="">Terms & conditions</a></li>
-                <li><a href="#" alt="">About</a></li>
-                <li><a href="#" alt="">Contact</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Terms & conditions</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </section>
-    
-        <section>
+        
+        <section id="follow-icons">
             <h3>Follow us</h3>
-            <a href="#" alt="Instagram" ><i class="fa-solid fa-image"></i></a>
-            <a href="#" alt="Facebook" ><i class="fa-solid fa-face-smile"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </section>
-    
+        
         <section id="subscribe">
             <h3>Join our newsletter</h3>
             <form>
-                <label for="email-signup"></label>
-                <input type="text" id="email-signup" value="Your email..."/>
-                <input type="submit" value="Subscribe">
+                <label for="email-signup" id="label-newsletter">Email for newsletter</label>
+                <input type="text" id="email-signup" value="Your email address..."/>
+                <input type="submit" id="button-signup" value="Sign up">
             </form>
         </section>
-    
     </footer>
+    <!-- FOOTER SLUTT -->
+
     </div>
+    <!-- GRID SLUTT -->
 </body>
 </html>

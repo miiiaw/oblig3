@@ -13,14 +13,24 @@ body {
   background-color: #ffffff;
 }
 body h2 {
-  font-size: 1.8rem;
-  margin-top: 5px;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 0px;
   color: #000000;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 1.5rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 1.4rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: lighter;
+  text-transform: uppercase;
 }
 
 #grid-container {
@@ -78,7 +88,7 @@ main {
 }
 main #campaign {
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   width: 100%;
 }
 main #campaign img {
@@ -88,7 +98,13 @@ main #campaign a {
   color: #000000;
   border: none;
 }
-main #flex-container-newp {
+main #new-products {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+main #new-products #flex-container-newp {
+  margin-top: 10px;
+  margin-bottom: 20px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -97,14 +113,14 @@ main #flex-container-newp {
   width: 100%;
   max-width: 500px;
 }
-main #flex-container-newp article {
+main #new-products #flex-container-newp article {
   padding: 3px;
   max-width: 150px;
 }
-main #flex-container-newp article img {
+main #new-products #flex-container-newp article img {
   max-width: 150px;
 }
-main #flex-container-newp article .products-summary {
+main #new-products #flex-container-newp article .products-summary {
   margin: 0;
   text-transform: lowercase;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -117,7 +133,8 @@ main #filter {
   text-align: right;
 }
 main #productphotos {
-  margin-top: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -147,13 +164,22 @@ main #product-info-first #add-favorite a {
   color: #000000;
 }
 main #product-info-second {
+  margin-top: 10px;
+  margin-bottom: 20px;
   width: 100%;
 }
 main #product-info-second p {
   margin-top: 0;
   margin-bottom: 3rem;
 }
-main #flex-container-similar {
+main #similar {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+main #similar h3 {
+  display: block;
+}
+main #similar #flex-container-similar {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -162,18 +188,14 @@ main #flex-container-similar {
   width: 100%;
   max-width: 500px;
 }
-main #flex-container-similar h2 {
-  margin-top: 0;
-  margin-bottom: 10rem;
-}
-main #flex-container-similar article {
+main #similar #flex-container-similar article {
   padding: 3px;
   max-width: 150px;
 }
-main #flex-container-similar article img {
+main #similar #flex-container-similar article img {
   max-width: 150px;
 }
-main #flex-container-similar article .products-summary {
+main #similar #flex-container-similar article .products-summary {
   margin: 0;
   text-transform: lowercase;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -181,7 +203,8 @@ main #flex-container-similar article .products-summary {
 }
 main #collections-mobile {
   width: 100%;
-  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 main #collections-mobile article img {
   margin-top: 10px;
@@ -202,26 +225,45 @@ footer {
   background-color: sandybrown;
   font-size: 1rem;
 }
+footer section {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+footer #follow-icons {
+  font-size: 2rem;
+}
 footer a {
   color: #000000;
   text-decoration: none;
-}
-footer h3 {
-  color: #000000;
-  font-size: 1.5rem;
 }
 footer ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-footer input {
-  background-color: #000000;
-  color: antiquewhite;
+footer #subscribe {
+  margin: auto;
+}
+footer #subscribe #label-newsletter {
+  display: none;
+}
+footer #subscribe input {
   display: block;
   margin: 5px auto;
   width: 150px;
-  height: 30px;
+  height: 36px;
+}
+footer #subscribe #email-signup {
+  background-color: antiquewhite;
+  color: #000000;
+  border-radius: 13%;
+  border: none;
+}
+footer #subscribe #button-signup {
+  background-color: #000000;
+  color: antiquewhite;
+  border-radius: 13%;
+  border: none;
 }
 
 /* CSS Desktop: Forandringer som skal skje på skjerm */
@@ -287,29 +329,40 @@ footer input {
     justify-self: center;
   }
   body main #campaign {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 800px;
-  }
-  body main #campaign img {
-    width: 100%;
-    max-width: 800px;
-  }
-  body main #flex-container-newp {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
     width: 100%;
     max-width: 900px;
   }
-  body main #flex-container-newp article {
+  body main #campaign img {
+    width: 100%;
+    max-width: 900px;
+  }
+  body main #new-products {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 900px;
+  }
+  body main #new-products #flex-container-newp {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+  }
+  body main #new-products #flex-container-newp article {
     max-width: 200px;
   }
-  body main #flex-container-newp article img {
+  body main #new-products #flex-container-newp article img {
     max-width: 200px;
   }
   body main #collections-mobile {
     display: none;
   }
   body main #collections-desktop {
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -322,8 +375,8 @@ footer input {
     padding: 0;
   }
   body main #collections-desktop article img {
-    width: 400px;
-    height: 250px;
+    width: 450px;
+    height: 300px;
   }
   body main #grid-product {
     width: 100%;
@@ -350,7 +403,6 @@ footer input {
     max-height: 100px;
   }
   body main #product-info-first {
-    margin: 0;
     grid-column: 2/3;
     grid-row: 1/2;
   }
@@ -364,18 +416,24 @@ footer input {
     color: #000000;
   }
   body main #product-info-second {
-    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
     grid-column: 1/4;
     grid-row: 2/3;
   }
-  body main #flex-container-similar {
+  body main #similar {
     margin: 0;
     grid-column: 1/4;
     grid-row: 3/4;
     width: 100%;
     max-width: 900px;
   }
-  body main article img {
+  body main #similar #flex-container-similar {
+    margin: 0;
+    width: 100%;
+    max-width: 900px;
+  }
+  body main #similar article img {
     max-width: 500px;
   }
   body footer {
@@ -388,9 +446,16 @@ footer input {
     grid-column: 1/5;
     grid-row: 3/4;
   }
-  body footer input {
-    width: 150px;
-    height: 30px;
+  body footer #section {
+    margin: 0;
+  }
+  body footer #follow-icons {
+    margin: 0;
+  }
+  body footer #subscribe {
+    margin: 0;
+  }
+  body footer #subscribe input {
     display: inline-block;
   }
 }/*# sourceMappingURL=main.css.map */
